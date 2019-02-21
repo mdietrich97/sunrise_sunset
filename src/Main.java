@@ -7,6 +7,8 @@ public class Main {
             @Override
             public void run() {
                 new Ui();
+                Sunrise sunrise = Parser.parse(Parser.testingJson);
+                System.out.println(sunrise.results.sunrise);
             }
         });
     }
